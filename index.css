@@ -272,7 +272,17 @@
         button:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
-
+        #Enviar {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            background-color: #0084ffb6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transform: scale(1.05);
+        }
         @media (max-width: 768px) {
             body {
                 font-size: 14px; /* Fuente más pequeña en móviles */
