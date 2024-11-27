@@ -118,13 +118,10 @@ footer {
     left: 0;
     width: 100%;
     background-color: #004C99;
-    /* Color de fondo */
     color: #fff;
-    /* Color del texto */
     text-align: center;
     padding: 0px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    /* Sombra para el efecto flotante */
 }
 
 img {
@@ -252,29 +249,23 @@ img {
     transform: scale(1.2);
 }
 
-/* Colores personalizados */
 .social-icons .fa-instagram {
     color: #E4405F;
-    /* Rojo-rosado Instagram */
 }
 
 .social-icons .fa-whatsapp {
     color: #25D366;
-    /* Verde WhatsApp */
 }
 
 .carousel-container {
     display: flex;
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
     position: relative;
     width: 80%;
     max-width: 300px;
     overflow: hidden;
     margin: 0 auto;
-    /* Centra horizontalmente en el contenedor */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -328,8 +319,7 @@ button:hover {
 
 @media (max-width: 768px) {
     body {
-        font-size: 20px;
-        /* Fuente más pequeña en móviles */
+        font-size: 30px;
     }
 
     header {
@@ -353,30 +343,25 @@ button:hover {
 
     .img-container img {
         max-width: 100%;
-        /* Imágenes responsivas */
         height: auto;
     }
 
     section {
         padding: 10px;
-        /* Reduce los márgenes en secciones */
     }
 
     .social-icons {
         bottom: 50px;
-        /* Ajusta la posición para pantallas pequeñas */
         right: 10px;
     }
 
     .social-icons a {
         font-size: 30px;
-        /* Iconos más pequeños */
         margin: 5px;
     }
 
     footer {
-        font-size: 12px;
-        /* Reduce el tamaño del texto */
+        font-size: 25px;
         padding: 5px;
 
     }
