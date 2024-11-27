@@ -3,19 +3,18 @@ let currentIndex = 0;
 
 function showNextSlide() {
     const totalSlides = carousel.children.length;
-    currentIndex = (currentIndex + 1) % totalSlides; // Va al siguiente y reinicia al final
+    currentIndex = (currentIndex + 1) % totalSlides;
     const width = carousel.offsetWidth;
     carousel.style.transform = `translateX(-${currentIndex * width}px)`;
 }
 
-setInterval(showNextSlide, 3000); // Cambia cada 3 segundos
+setInterval(showNextSlide, 3000);
 
-document.getElementById("formulario").addEventListener("submit", function(e) {
-    e.preventDefault(); // Evitar recargar la página
-    const formData = new FormData(e.target); // Capturar los datos del formulario
-    const jsonData = JSON.stringify(Object.fromEntries(formData)); // Convertir a JSON
-
-    // Llamar al Apps Script
+document.getElementById("formulario").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const jsonData = JSON.stringify(Object.fromEntries(formData));
+    
     google.script.run
         .withSuccessHandler(() => alert("¡Formulario enviado con éxito!"))
         .withFailureHandler((error) => alert("Error: " + error))
